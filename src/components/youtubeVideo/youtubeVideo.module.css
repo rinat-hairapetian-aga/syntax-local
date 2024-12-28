@@ -1,0 +1,53 @@
+.youtubeVideoBlock {
+    position: relative;
+    min-height: 300px;
+}
+
+.youtubeVideoWrapper,
+.youtubeVideoPlaceholder {
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.youtubeVideoPlaceholder {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.youtubeVideoPlaceholder::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./images/play.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1199.9px) {
+    .youtubeVideoWrapper,
+    .youtubeVideoPlaceholder  {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 767.9px) {
+    .youtubeVideoBlock {
+        min-height: 240px;
+    }
+    .youtubeVideoWrapper,
+    .youtubeVideoPlaceholder  {
+        height: 250px;
+    }
+}

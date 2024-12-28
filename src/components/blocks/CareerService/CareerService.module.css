@@ -1,0 +1,209 @@
+.block {
+    padding-top: 24px;
+    padding-bottom: 106px;
+}
+
+.title {
+    color: #0B1B3B;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 68px;
+}
+
+.stageWrapper {
+    position: relative;
+}
+
+.stageLabel {
+    position: absolute;
+    left: -56px;
+    top: 0;
+    width: 46px;
+    height: calc(100% - 32px);
+
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+
+.stageLabel span {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    display: block;
+    height: 46px;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    min-width: 164px;
+    transform-origin: center;
+    flex-grow: 1;
+
+    text-align: center;
+
+    color: #FFF;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 2px;
+    padding-bottom: 6px;
+}
+
+.durationWrapper {
+    position: absolute;
+    left: 0;
+}
+
+.durationWrapper.stage1 {
+    top: -75px;
+}
+
+.durationWrapper .durationLines {
+    border: 2px solid #8B93A2;
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+
+.durationWrapper.stage1 .durationLines {
+    border-bottom: unset;
+    margin-top: 20px;
+}
+
+.durationWrapper.stage1 .durationLines::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    height: 20px;
+    width: 2px;
+    background-color: #8B93A2;
+    display: block;
+}
+
+.duration {
+    color: #040D1D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+
+
+.durationWrapper.stage2 {
+    bottom: -75px;
+}
+
+.durationWrapper.stage2 .durationLines {
+    border-top: unset;
+    margin-bottom: 20px;
+}
+
+.durationWrapper.stage2 .durationLines::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    height: 20px;
+    width: 2px;
+    background-color: #8B93A2;
+    display: block;
+}
+
+
+@media screen and (max-width:991.9px) {
+
+    .block {
+        padding-top: 34px;
+        padding-bottom: 56px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .stageWrapper {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .stageLabel {
+        width: 30px;
+        left: -40px;
+        border-radius: 5px;
+    }
+
+    .stageLabel span {
+        height: 30px;
+        /* transform: translate(0px, 30px) rotate(-90deg); */
+        font-size: 18px;
+    }
+
+
+    .durationWrapper.stage1,
+    .durationWrapper.stage2 {
+        top: 16px;
+        left: unset;
+        right: -10px;
+        height: calc(100% - 30px);
+        width: 20px;
+        padding: 0;
+    }
+
+    .durationWrapper .durationLines {
+        border: 2px solid #8B93A2;
+        width: 8px;
+        height: 100%;
+        position: relative;
+    }
+
+    .durationWrapper.stage1 .durationLines,
+    .durationWrapper.stage2 .durationLines {
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 2px solid #8B93A2;
+        border-left: unset;
+    }
+
+    .durationWrapper.stage1 .durationLines::before,
+    .durationWrapper.stage2 .durationLines::before {
+        content: '';
+        position: absolute;
+        right: -7px;
+        left: unset;
+        top: 50%;
+        height: 2px;
+        width: 7px;
+        background-color: #8B93A2;
+        display: block;
+    }
+
+    .duration {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        display: block;
+        min-width: max-content;
+        top: 50%;
+        left: 25px;
+    }
+
+}
+
+@media screen and (max-width:767.9px) {
+    .title {
+        text-align: left;
+    }
+}

@@ -1,0 +1,138 @@
+.block {
+    position: relative;
+    padding: 16px 0 70px;
+    min-height: 890px;
+}
+
+.title {
+    color: #000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 36px;
+}
+
+
+.optionTitle {
+    display: inline-block;
+    position: relative;
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 8px 45px 12px 20px;
+    margin-bottom: 34px;
+}
+
+.optionTitle svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.item {
+    border-radius: 12px;
+    border: 1px solid #3C5868;
+    padding: 24px 20px;
+    background: #E0FFFB;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item img {
+    margin-bottom: 14px;
+}
+
+.itemTitle {
+    display: inline-block;
+    position: relative;
+    color: #FFF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 4px 25px 5px 20px;
+    margin-bottom: 24px;
+}
+
+.itemTitle svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.itemContent {
+    flex-grow: 1;
+}
+
+.itemContent li,
+.itemContent p {
+    margin-bottom: 5px;
+    color: #000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+
+@media screen and (max-width:1199.9px) {
+
+    .block {
+        padding: 38px 0 0;
+        min-height: 1400px;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+
+    .optionTitle {
+        font-size: 18px;
+        padding: 6px 25px 8px 15px;
+        margin-bottom: 24px;
+    }
+
+    .item {
+        border-radius: 9px;
+        padding: 18px 15px;
+        max-width: 390px;
+    }
+
+    .itemTitle {
+        font-size: 15px;
+        padding: 4px 20px 5px 15px;
+        margin-bottom: 14px;
+    }
+
+    .itemContent ul,
+    .itemContent ol {
+        list-style-position: outside;
+    }
+
+    .itemContent li,
+    .itemContent p {
+        font-size: 13.5px;
+    }
+}

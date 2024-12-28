@@ -1,0 +1,421 @@
+.block {
+    padding: 30px 0;
+    position: relative;
+    --border-color: #cbc0f4;
+    --bg-color: #DBD2FF;
+    --size: 120px;
+    --bf-size: 59px;
+}
+
+.lines {
+    position: absolute !important;
+    top: 100px;
+    right: 0;
+}
+
+.title {
+    color: #000;
+
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 58px;
+}
+
+.stepsWrapper {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.step {
+    padding: 35px 40px;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: var(--size);
+    overflow: hidden;
+}
+
+.step:last-child {
+    background-color: var(--bg-color);
+}
+
+.step:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: white;
+    border: 1px solid var(--border-color);
+    width: var(--bf-size);
+    height: var(--bf-size);
+    border-left: 0;
+    border-bottom: 0;
+    transform-origin: 0 0;
+    transform: rotate(45deg) skew(24deg, 24deg);
+}
+
+.additionalDescription {
+    color: #0B1B3B;
+    text-align: right;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 48px;
+}
+
+.optionsTitle {
+    color: #000;
+
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.optionsBanner {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px 16px 30px;
+    margin-bottom: 18px;
+}
+
+.optionsBannerTitle {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.optionsBannerPrice {
+    color: #0B1B3B;
+    text-align: right;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.optionsBannerPeriod {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.optionsOutline {
+    border: 1px solid #0B1B3B;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.optionsHeading {
+    border-radius: 5px 5px 0px 0px;
+    background: #0B1B3B;
+    padding: 20px 25px;
+}
+
+.optionsHeading .headingTitle {
+    color: #FFF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: capitalize;
+}
+
+.optionsHeading .headingDescription {
+    color: #FFF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.optionsHeading .headingDescription :last-child {
+    margin-bottom: 0;
+}
+
+.optionsHeading .headingDescription a {
+    color: #fff !important;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.optionHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DAE3F3;
+    padding: 12px 12px 12px 24px;
+}
+
+.optionTitle {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.optionsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.optionDetails {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 25px 0;
+    transition: max-height 0.5s, opacity 0.5s, padding 0.5s;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    overflow: hidden;
+    row-gap: 18px;
+}
+
+.optionWrapper.opened .optionDetails {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 25px 25px 18px;
+}
+
+.optionDetail:not(:nth-child(6n + 1))::before {
+    content: '';
+    height: 100%;
+    width: 1px;
+    float: left;
+    background: #000;
+    margin-right: 20px;
+}
+
+.optionDetail .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 10px;
+}
+
+
+.optionDetail .info b {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.optionDetail .info div {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+
+
+@media screen and (max-width:991.9px) {
+
+    .block {
+        --bf-size: 136px;
+        --size: 320px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .stepsWrapper {
+        flex-direction: column;
+        width: var(--size);
+        position: relative;
+        margin: 0 auto;
+        background-color: white;
+        margin-bottom: 60px;
+    }
+
+    .step {
+        height: auto;
+        width: var(--size);
+        text-align: center;
+        padding: 50px 40px 15px;
+    }
+
+    .step:first-child {
+        padding-top: 24px;
+    }
+
+    .step:not(:first-child)::before {
+        content: '';
+        display: block;
+        left: 0;
+        top: 0;
+        background: white;
+        width: var(--bf-size);
+        height: var(--bf-size);
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 2px solid var(--border-color);
+        border-left: 2px solid var(--border-color);
+        transform-origin: 0 0;
+        transform: rotate(-45deg) skew(34deg, 34deg);
+    }
+
+    .additionalDescription {
+        display: none;
+    }
+
+    .optionsTitle {
+        font-size: 28px;
+        color: #0B1B3B;
+        margin-bottom: 20px;
+    }
+
+    .optionsBanner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 6px 20px 6px;
+        margin-bottom: 25px;
+    }
+
+    .optionsBannerTitle {
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center
+    }
+
+    .optionsBannerPrice {
+        font-size: 44px;
+        text-align: center
+    }
+
+    .optionsBannerPeriod {
+        font-size: 26.646px;
+        font-weight: 400;
+        text-align: center
+    }
+
+    .optionsHeading {
+        padding: 18px 20px;
+    }
+
+    .optionsHeading .headingTitle {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .optionsHeading .headingDescription {
+        font-size: 18px;
+    }
+
+    .optionDetails {
+        grid-template-columns: repeat(3, auto);
+        padding: 0 20px 0;
+    }
+
+    .optionWrapper.opened .optionDetails {
+        max-height: 1000px;
+        opacity: 1;
+        padding: 25px 20px 20px;
+    }
+
+    .optionDetail:not(:nth-child(6n + 1))::before {
+        display: none;
+    }
+
+    .optionDetail:not(:nth-child(3n + 1))::before {
+        content: '';
+        height: 100%;
+        width: 1px;
+        float: left;
+        background: #000;
+        margin-right: 15px;
+        display: block;
+    }
+}
+
+@media screen and (max-width:575.9px) {
+    .optionDetails {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .optionWrapper.opened .optionDetails {
+        max-height: 1000px;
+        opacity: 1;
+        padding: 25px 20px 20px;
+    }
+
+    .optionDetail:not(:nth-child(6n + 1))::before,
+    .optionDetail:not(:nth-child(3n + 1))::before {
+        display: none;
+    }
+
+    .optionDetail:not(:nth-child(2n + 1))::before {
+        content: '';
+        height: 100%;
+        width: 1px;
+        float: left;
+        background: #000;
+        margin-right: 15px;
+        display: block;
+    }
+
+    .optionDetail .info {
+        gap: 6px;
+    }
+
+
+    .optionDetail .info b {
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 120%;
+    }
+
+    .optionDetail .info div {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:374.9px) {
+    .block {
+        --size: 300px;
+        --bf-size: 128px;
+    }
+}

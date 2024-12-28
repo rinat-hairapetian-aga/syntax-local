@@ -1,0 +1,36 @@
+.breadcrumbs {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #F7F7F7;
+    padding: 10px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs a {
+    color: #6C7880 !important;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    min-width: max-content;
+}
+
+
+.breadcrumbs h1,
+.breadcrumbs span {
+    color: #2D63CC;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    min-width: max-content;
+}

@@ -1,0 +1,29 @@
+.block {
+    --bg-color: #0B1B3B;
+    --text-color: #fff;
+
+    background-color: var(--bg-color);
+    padding: 66px 0 24px;
+    min-height: 980px;
+}
+
+.title {
+    color: var(--text-color);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:991.9px) {
+    .block {
+        padding: 54px 0 20px;
+    }
+    .title {
+        font-size: 28px;
+        margin-bottom: 27px;
+    }
+}

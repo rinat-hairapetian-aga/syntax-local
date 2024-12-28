@@ -1,0 +1,38 @@
+.cta {
+    --color: #00B3FF;
+    --color-hover: #66D1FF;
+    --color-text: #040D1D;
+    --border-color: transparent;
+
+    background-color: var(--color);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px 16px;
+    min-width: 250px;
+
+    border: 1px solid var(--border-color) !important;
+    text-decoration: none !important;
+    color: var(--color-text) !important;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: all 0.2s;
+
+}
+
+.cta:hover {
+    background-color: var(--color-hover);
+}
+
+.cta.outline {
+    border: 1px solid #FFF !important;
+    color: #FFF !important;
+    background: transparent !important;
+}
+
+.cta.outline:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+}

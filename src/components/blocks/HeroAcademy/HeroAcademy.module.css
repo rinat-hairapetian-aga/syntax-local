@@ -1,0 +1,137 @@
+.block {
+    --bg-color: #000!important;
+    --left-col-alignment: center;
+    background-color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+    padding-top: 38px;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+}
+
+.bg {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.leftCol {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: var(--left-col-alignment);
+    padding-top: 38px;
+    padding-bottom: 70px;
+}
+
+
+.preTitle {
+    color: #FFF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.title {
+    color: #FFF;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.date {
+    color: #FFF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 22px;
+}
+
+.buttonsWrapper {
+    margin-top: 28px;
+    display: flex;
+    gap: 8px;
+}
+
+@media screen and (max-width:991.9px) {
+
+    .block {
+        align-items: stretch;
+        padding-top: 68px;
+        padding-bottom: 35px;
+    }
+
+    .leftCol {
+        justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .preTitle {
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .date {
+        text-align: center;
+    }
+
+    .buttonsWrapper {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:767.9px) {
+
+    .leftCol {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .preTitle {
+        font-size: 22px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .date {
+        margin-top: 12px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .buttonsWrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        max-width: 250px;
+        margin: 4px auto 0;
+    }
+
+}
+
+@media screen and (max-width:575.9px) {
+    .block {
+        min-height: 550px;
+    }
+}

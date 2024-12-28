@@ -1,0 +1,139 @@
+.block {
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 52px;
+    min-height: 720px;
+}
+
+.title {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+
+}
+
+.content {
+    color: #05192D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.content * {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.content p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 0;
+}
+
+.content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.content ul, .content ol {
+    margin-bottom: 0;
+}
+
+.content li {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 0;
+}
+
+.readMore {
+    display: none;
+}
+
+
+@media screen and (max-width:1399.9px) {
+    .block {
+        min-height: 690px;
+    }
+}
+
+@media screen and (max-width:1199.9px) {
+    .block {
+        min-height: 625px;
+    }
+}
+
+@media screen and (max-width:991.9px) {
+    .block {
+        min-height: 1090px;
+    }
+}
+
+@media screen and (max-width:767.9px) {
+    .block {
+        padding-top: 28px;
+        padding-top: 10px;
+        min-height: 750px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .content {
+        gap: 15px;
+    }
+
+    .readMore {
+        display: inline-block;
+        color: #05192D;
+        cursor: pointer;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        text-decoration-line: underline;
+        margin-top: 8px;
+    }
+
+    .content p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 0;
+    }
+
+    .content h3 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .content ul, .content ol {
+        padding-left: 8px;
+        margin-bottom: 0;
+    }
+
+    .content li {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (max-width:575.9px) {
+    .block {
+        min-height: 650px;
+    }
+}

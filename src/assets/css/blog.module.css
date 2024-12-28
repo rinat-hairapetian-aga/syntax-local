@@ -1,0 +1,114 @@
+.breadcrumbs {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #F7F7F7;
+    padding: 10px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs a {
+    color: #6C7880 !important;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+
+.breadcrumbs h1 {
+    color: #2D63CC;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 60px;
+}
+
+.categories button,
+.categories a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+    background: #F3F3F3;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.categories button.active,
+.categories a.active {
+    background: #FDCEB4;
+    color: #FF5B00;
+    cursor: auto;
+}
+
+.pagination {
+    position: relative;
+}
+
+.pagination a,
+.pagination b {
+    display: flex;
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+
+    justify-content: center;
+    align-items: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85) !important;
+    transition: all 0.2s;
+}
+
+.pagination b {
+    color: #D9D9D9 !important;
+}
+
+.pagination a:hover {
+    color: #1890FF !important;
+    border-color: #1890FF;
+}
+
+
+@media screen and (max-width: 767.9px) {
+
+    .heading-banner {
+        margin-bottom: 0;
+    }
+
+    .pagination a,
+    .pagination b {
+        width: 37.27px;
+        height: 34.4px;
+        font-size: 23.3957px;
+        line-height: 32px;
+        padding: 0;
+    }
+}

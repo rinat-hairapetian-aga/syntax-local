@@ -1,0 +1,191 @@
+.privacyPageHero {
+    padding: 160px 0;
+    position: relative;
+}
+
+.heroWrap .privacyHeroMainTitle {
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+    max-width: 935px;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    line-height: 75.6px;
+}
+
+.heroWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+}
+
+.privacyPageHero .heroWrap .lastUpdateDate {
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.privacyPageHero .heroBackground {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 991.9px) {
+    .heroWrap .privacyHeroMainTitle {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .privacyPageHero .heroWrap .lastUpdateDate {
+        font-size: 14px;
+        line-height: 17.64px;
+    }
+
+    .privacyPageHero {
+        padding: 90px 0;
+    }
+}
+
+
+/*Content*/
+
+.privacyWrapper {
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
+
+
+.privacyDescription [id] {
+    scroll-margin-top: 86px;
+}
+
+
+.privacyDescription h2,
+.privacyDescription h3,
+.privacyDescription h4,
+.privacyDescription h5,
+.privacyDescription h6 {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+    color: #000;
+    font-family: 'Plus Jakarta Sans'sans-serif;
+    text-transform: capitalize;
+}
+
+.privacyDescription p,
+.privacyDescription span,
+.privacyDescription a,
+.privacyDescription div,
+.privacyDescription b,
+.privacyDescription i,
+.privacyDescription u,
+.privacyDescription li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000;
+    line-height: 27px;
+    font-family: 'Plus Jakarta Sans'sans-serif;
+    font-weight: 500;
+    margin: 0 0 24px;
+}
+
+.privacyDescription :last-child {
+    margin-bottom: 0;
+}
+
+.privacyDescription .descriptionBlock:last-child {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .privacyDescription .descriptionBlock>.descriptionBlockSubtitle {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .privacyDescription .descriptionBlock>p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* Sidebar */
+
+
+.postContentMenu {
+    position: sticky;
+    top: 96px;
+    border-radius: 10px;
+    padding: 12px 20px;
+    background-color: #E1F8FF;
+    margin-top: 18px;
+    max-height: calc(100vh - 96px);
+}
+
+
+
+.postContentMenu h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18.09px;
+    line-height: 22.79px;
+    margin-bottom: 16px;
+}
+
+.menuWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: flex-start;
+
+    max-height: calc(100vh - 170px);
+    overflow: auto;
+    scrollbar-color: #ffffff #E1F8FF;
+    scrollbar-width: thin;
+}
+
+
+.menuWrapper::-webkit-scrollbar-track {
+    background-color: #E1F8FF;
+}
+
+.menuWrapper::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #E1F8FF;
+}
+
+.menuWrapper::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+
+.menuWrapper a {
+    padding: 9px 18px 9px 18px;
+    color: #1B1B1F;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+    font-weight: 400;
+    font-size: 14.47px;
+    line-height: 18.23px;
+    text-decoration: none;
+
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.menuWrapper a.active,
+.menuWrapper a:hover {
+    border-left-color: #0B1B3B;
+    font-weight: 700;
+}

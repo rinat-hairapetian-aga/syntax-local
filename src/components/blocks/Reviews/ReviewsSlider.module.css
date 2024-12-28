@@ -1,0 +1,77 @@
+.block {
+    --text-color: #fff;
+
+    color: var(--text-color);
+}
+
+.reviewWrapper {
+    border-left: 9px solid #03A9F4;
+    padding-left: 24px;
+    display: flex;
+    gap: 24px;
+    max-width: 790px;
+    margin-right: 75px;
+}
+
+.imageWrapper {
+    max-width: 165px;
+    min-width: 165px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.name {
+    color: var(--text-color);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.position {
+    color: var(--text-color);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.review {
+    color: var(--text-color);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media screen and (max-width:991.9px) {
+    .reviewWrapper {
+        border-left: unset;
+        flex-direction: column;
+        max-width: unset;
+        margin-right: unset;
+        padding: 0 15px;
+    }
+
+    .imageWrapper {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        color: var(--text-color);
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

@@ -1,0 +1,106 @@
+.authorImg {
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    margin-right: 0;
+}
+
+.heading {
+    content-visibility: visible;
+    background-color: #0B1B3B;
+    padding: 96px 0 110px;
+    position: relative;
+}
+
+.heading .bg {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.headingInner {
+    border-radius: 12px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 48px;
+}
+
+.heading h1 {
+    color: #181A2A;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.description {
+    color: #3B3C4A;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.authorSocials {
+    display: inline-flex;
+    gap: 16px;
+}
+
+.authorSocials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postedBy {
+    color: #000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767.9px) {
+    .heading {
+        padding: 38px 0 35px;
+    }
+
+    .headingInner {
+        padding: 23px;
+        gap: 12px;
+    }
+
+    .shareBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shareBlock h4 {
+        margin-bottom: 12px;
+    }
+
+    .authorSocials {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .postedBy {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,192 @@
+.block {
+    display: block;
+    --bg-color: #0B1B3C;
+    --card-bg-color: #172645;
+    --title-color: #37C1FF;
+    --items-color: #134068;
+}
+
+.wrapper {
+    background-color: var(--bg-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: 1000px;
+}
+
+
+.title {
+    color: var(--title-color);
+
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #BBB;
+
+    text-align: center;
+    /* Medium */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content {
+    background-color: var(--card-bg-color);
+    margin-top: 40px;
+    border-radius: 8px;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+    padding: 30px 60px 50px;
+}
+
+.stepsWraper {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 43px;
+    margin-top: 45px;
+}
+
+.step {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titleWrapper {
+    background: #FFF;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.number {
+    color: #0B1B3B;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    /* 75px */
+    text-transform: capitalize;
+    padding: 16px 18px 0;
+}
+
+.value {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0 18px 20px;
+    margin-top: 30px;
+}
+
+.description {
+    background-color: var(--items-color);
+    color: white;
+    padding: 17px 8px 14px 18px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    flex-grow: 1;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.description ul,
+.description ol {
+    padding-left: 12px;
+}
+
+.description li {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:1199.9px) {
+
+    .wrapper {
+        min-height: 1200px;
+    }
+
+    .stepsWraper {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width:991.9px) {
+    .wrapper {
+        min-height: 1100px;
+    }
+}
+
+
+@media screen and (max-width:767.9px) {
+
+    .wrapper {
+        min-height: 1500px;
+    }
+
+    .title {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    .subtitle {
+        text-align: left;
+    }
+
+    .content {
+        padding: 30px 26px 56px 46px;
+    }
+
+    .stepsWraper {
+        grid-template-columns: auto;
+        margin-top: 0;
+    }
+
+    .step {
+        position: relative;
+    }
+
+    .step::before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        left: -38px;
+        display: block;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-image: linear-gradient(to bottom, var(--title-color), var(--items-color));
+    }
+
+    .step:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        left: -26px;
+        display: block;
+        width: 2px;
+        height: calc(100% + 43px);
+        border-radius: 50%;
+        background-image: linear-gradient(to bottom, var(--items-color), var(--title-color));
+    }
+
+    .description ul,
+    .description ol {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+}

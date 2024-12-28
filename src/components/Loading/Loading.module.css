@@ -1,0 +1,35 @@
+
+@-webkit-keyframes loading {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    width: 64px;
+    height: 64px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.loading .spinner {
+    content: "";
+    width: 85%;
+    height: 85%;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #d7d7d7;
+    border-left-color: #063b6d;
+    -webkit-animation: loading 1.5s linear infinite;
+    animation: loading 1.5s linear infinite;
+}

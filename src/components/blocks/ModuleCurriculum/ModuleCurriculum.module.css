@@ -1,0 +1,109 @@
+.block {
+    position: relative;
+    --bg-color: #0B1B3B;
+}
+
+.wrapper {
+    background-color: var(--bg-color);
+    padding: 20px 0;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #BBB;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.weeksWraper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin-top: 64px;
+}
+
+.weekTitle {
+    border-radius: 6px;
+    background: #FFF;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    color: #0A141B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.week .weekContent {
+    color: #FFF;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s, opacity 0.5s, margin-top 0.5s;
+    overflow: hidden;
+    padding-left: 32px;
+}
+
+
+.week.opened .weekContent {
+    max-height: 1000px;
+    margin-top: 40px;
+    opacity: 1;
+    overflow: unset;
+}
+
+@media screen and (max-width:767.9px) {
+
+    .title {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    .subtitle {
+        text-align: left;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    .weekTitle {
+        font-size: 20px;
+        padding: 16px 24px;
+    }
+
+    .week .weekContent {
+        font-size: 16px;
+        padding-left: 12px;
+    }
+
+    .week .weekContent ul {
+        list-style-position: outside;
+    }
+}

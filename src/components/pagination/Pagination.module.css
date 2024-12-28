@@ -1,0 +1,44 @@
+.pagination {
+    position: relative;
+}
+
+.pagination a,
+.pagination b {
+    display: flex;
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid transparent;
+    border-radius: 2px;
+
+    justify-content: center;
+    align-items: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85) !important;
+    transition: all 0.2s;
+}
+
+.pagination b {
+    color: #D9D9D9 !important;
+}
+
+.pagination a:hover {
+    color: #1890FF !important;
+    border-color: #1890FF;
+    font-weight: 500;
+}
+
+.total {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}

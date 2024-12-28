@@ -1,0 +1,164 @@
+.block {
+    background-color: #0B1B3B;
+    padding: 45px 0 55px;
+}
+
+.bg {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 122 / 62;
+    border-radius: 12px;
+}
+
+.readingTime {
+    position: absolute;
+    top: 11px;
+    right: 26px;
+
+    border-radius: 6px;
+    background: #F1F5FF;
+    padding: 4px 10px;
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    z-index: 2;
+}
+
+.postItem {
+    position: absolute;
+    background-image: linear-gradient(180deg, #37D9FF 0%, #2A60EE 100%);
+    z-index: 2;
+    left: 64px;
+    bottom: 0;
+    text-decoration: none;
+    max-width: 600px;
+    border-radius: 6px;
+}
+
+.info {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+
+.category {
+    border-radius: 6px;
+    background: #0B1B3B;
+    padding: 4px 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 16px;
+    color: #FFF;
+}
+
+.title {
+    color: #FFF;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+
+
+.postAuthor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.postAuthorImg {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+
+.postAuthorName {
+    font-family: 'Plus Jakarta Sans', 'sans-serif';
+    text-decoration: none;
+    color: #000 !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.date {
+    color: #000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media only screen and (max-width: 991.9px) {
+
+    .block {
+        background-color: #0B1B3B;
+        padding: 2px 0 32px;
+    }
+
+    .readingTime {
+        font-size: 10.715px;
+        line-height: 15.307px;
+    }
+
+    .bg {
+        min-height: 310px;
+    }
+
+    .postItem {
+        z-index: 2;
+        left: 5%;
+        max-width: 90%;
+    }
+
+    .info {
+        padding: 23px;
+    }
+
+    .category {
+        border-radius: 3.456px;
+        font-size: 8.064px;
+        line-height: 11.52px;
+        padding: 2px 6px;
+    }
+
+    .title {
+        font-size: 20.737px;
+        line-height: 23.041px;
+        margin-bottom: 13px;
+    }
+
+    .postAuthorImg {
+        width: 20px;
+        min-width: 20px;
+        height: 20px;
+    }
+
+    .postAuthorName,
+    .date {
+        font-size: 9.216px;
+        line-height: 13.825px;
+    }
+}

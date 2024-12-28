@@ -1,0 +1,124 @@
+.block {
+    position: relative;
+}
+
+.wrapper {
+    background-color: #0B1B3B;
+    padding-top: 56px;
+    padding-bottom: 64px;
+    position: relative;
+    min-height: 500px;
+}
+
+.bg {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.title {
+    color: #FFF;
+
+    text-align: center;
+    /* Header */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #FFF;
+
+    text-align: center;
+    /* Medium */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.itemsWraper {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 80px;
+    justify-content: space-around;
+    margin-top: 74px;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.description {
+    color: #FFF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.description b {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.bottomImage {
+    width: 100%;
+    margin-top: -2px;
+}
+
+@media screen and (max-width:767.9px) {
+
+    .wrapper {
+        padding-top: 32px;
+        padding-bottom: 18px;
+        min-height: 605px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        line-height: 110%;
+        text-align: left;
+    }
+
+    .itemsWraper {
+        grid-template-columns: auto;
+        row-gap: 60px;
+        justify-content: start;
+        margin-top: 32px;
+    }
+
+    .item {
+        gap: 16px;
+    }
+
+    .description {
+        font-size: 14.679px;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    .description b {
+        font-size: 19.571px;
+        font-weight: 300;
+        line-height: 120%;
+    }
+
+}

@@ -1,0 +1,55 @@
+.author-wrapper {
+    margin: 24px auto 50px;
+    padding-top: 24px;
+    max-width: 640px;
+    border-top: 1px dashed #000000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.author-img {
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    /* float: left; */
+}
+
+.author-name {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000 !important;
+    text-decoration: none;
+}
+
+.author-description {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #0C0C0C;
+}
+
+@media screen and (max-width: 767.9px) {
+
+    .author-img {
+        width: 60px;
+        min-width: 60px;
+        height: 60px;
+        float: left;
+    }
+
+    .author-name {
+        font-size: 14px;
+    }
+
+    .author-description {
+        font-size: 14px;
+    }
+}

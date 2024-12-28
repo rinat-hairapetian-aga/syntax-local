@@ -1,0 +1,148 @@
+.block {
+    position: relative;
+    --bg-color: #0B1B3B;
+}
+
+.wrapper {
+    background-color: var(--bg-color);
+    padding-top: 48px;
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 1;
+    min-height: 800px;
+}
+
+.lines {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title {
+    color: #FFF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 36px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid #3C5868;
+    background-color: #FFF;
+    padding: 24px 20px;
+    height: 100%;
+    max-width: 100%;
+}
+
+.itemImageWrapper {
+    position: relative;
+}
+
+.itemDuation {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 4.5px 10px 4.5px 15px;
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.itemDuation .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 20px);
+    height: 100%;
+    z-index: 0;
+}
+
+.itemDuation .bg svg {
+    height: 100%;
+    width: 100%;
+}
+
+.itemTitle {
+    color: #040D1D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    flex-grow: 1;
+    min-height: 60px;
+}
+
+.itemDescription,
+.itemDescription * {
+    color: #040D1D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.itemDescription b,
+.itemDescription strong {
+    font-weight: 800;
+}
+
+.itemDescription p,
+.itemDescription ul,
+.itemDescription ol,
+.itemDescription li {
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width:767.9px) {
+
+    .wrapper {
+        padding-top: 48px;
+        padding-bottom: 2px;
+    }
+
+
+    .lines {
+        top: 100px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .item {
+        padding: 18px 16px;
+    }
+
+    .itemTitle {
+        margin-top: 18px;
+        margin-bottom: 12px;
+    }
+
+    .itemDescription,
+    .itemDescription * {
+        font-size: 16px;
+    }
+
+    .itemDescription ul,
+    .itemDescription ol {
+        list-style-position: outside;
+        padding-left: 24px;
+    }
+}

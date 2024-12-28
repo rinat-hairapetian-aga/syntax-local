@@ -1,0 +1,32 @@
+.block {
+    margin: 30px 0 50px;
+}
+
+.title {
+    color: #000;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 32px;
+}
+
+.btnWrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:767.9px) {
+    .title {
+        font-size: 28px;
+        margin-bottom: 17px;
+    }
+
+    .btnWrapper {
+        margin-top: -32px;
+        justify-content: flex-start;
+    }
+}

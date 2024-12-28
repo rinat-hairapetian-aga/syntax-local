@@ -1,0 +1,340 @@
+.block {
+    padding: 56px 0 22px;
+    position: relative;
+}
+
+.linesLeft {
+    position: absolute !important;
+    top: 300px;
+    left: 0;
+}
+
+.linesRight {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+}
+
+.title {
+    color: #000;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+}
+
+.subtitle {
+    color: #000;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.badge {
+    border-radius: 5px 5px 0px 0px;
+    background: linear-gradient(180deg, #37D9FF 0%, #2A60EE 100%);
+    padding: 5px 10px;
+    color: #FFF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    top: -30px;
+    left: 15px;
+}
+
+.salary {
+    position: relative;
+    margin-top: 30px;
+}
+
+.salary .salaryItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.salary .item {
+    border-radius: 5px;
+    background: rgba(218, 227, 243, 0.50);
+    padding: 30px 32px 30px 28px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.salary .item .bg {
+    position: absolute !important;
+    right: 0;
+    bottom: 0;
+}
+
+.salary .item .label {
+    color: #040D1D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.salary .item .value {
+    color: #040D1D;
+    text-align: right;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.salary .graph {
+    border-radius: 5px;
+    background: rgba(218, 227, 243, 0.50);
+    padding: 5px 27px;
+}
+
+.salary .graph .label {
+    color: #00B3FF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.salary .graph .value {
+    color: #040D1D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 4px;
+}
+
+.salary .graph .line {
+    margin: 10px 0;
+    height: 8px;
+    width: 100%;
+    background: #90D7FF;
+    display: flex;
+    border-radius: 2px;
+}
+
+.salary .graph .line .point {
+    background-color: #00B3FF;
+    width: 8px;
+}
+
+.salary .level .label {
+    color: #040D1D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    width: calc(100% / 3);
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.salary .level .label:nth-child(1) {
+    border-radius: 5px 0px 0px 5px;
+    background: #EDF1F9;
+}
+
+.salary .level .label:nth-child(2) {
+    background: #DBE6FC;
+}
+
+.salary .level .label:nth-child(3) {
+    border-radius: 0px 5px 5px 0px;
+    background: #CFDDF9;
+}
+
+.salary .level .value {
+    color: #040D1D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+.tuition {
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #0B1B3B;
+    padding: 24px;
+    margin-top: 30px;
+}
+
+.tuition .title {
+    color: #0B1B3B;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.tuition .price {
+    color: #0B1B3B;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 24px;
+}
+
+.tuition .subtitle {
+    color: #0B1B3B;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tuition .description {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 24px;
+    position: relative;
+    margin-left: 12px;
+}
+
+.tuition .description::before {
+    content: '*';
+    position: absolute;
+    left: -12px;
+}
+
+.tuition .dropdown {
+    margin-top: 24px;
+    padding: 10px 8px;
+    border-radius: 5px;
+    border: 1px solid #0B1B3B;
+}
+
+.tuition .dropdown .heading {
+    position: relative;
+    padding-left: 14px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.tuition .dropdown .label {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tuition .dropdown .content {
+    margin-top: 16px;
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    padding-left: 24px;
+}
+
+.tuition .dropdown .content ul {
+    padding-left: 0;
+}
+
+.tuition .dropdown .content li,
+.tuition .dropdown .content p {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin-bottom: 8px;
+}
+
+.tuition .dropdown .content li:last-child,
+.tuition .dropdown .content p:last-child {
+    margin: 0;
+}
+
+
+@media screen and (max-width:991.9px) {
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .salary .item {
+        padding: 30px 10px 30px 15px;
+    }
+
+    .salary .level .value:nth-child(1) {
+        text-align: left;
+    }
+
+    .salary .level .value:nth-child(3) {
+        text-align: right;
+    }
+
+
+    .tuition .title {
+        margin: 0 -20px;
+    }
+
+    .tuition .price {
+        font-size: 28px;
+        margin-top: 12px;
+    }
+
+    .tuition .subtitle {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .tuition .dropdown .label {
+        font-size: 20px;
+    }
+
+    .tuition .dropdown .content ul {
+        list-style-position: outside;
+    }
+}

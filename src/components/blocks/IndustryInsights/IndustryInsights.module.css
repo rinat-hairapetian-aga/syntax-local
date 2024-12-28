@@ -1,0 +1,65 @@
+.block {
+    --bg-color: #f4f7fc;
+
+    background-color: var(--bg-color);
+    padding: 34px 0 70px;
+}
+
+.title {
+    color: #040D1D;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 58px;
+}
+
+.item {
+    border-radius: 16px;
+    background: #FFF;
+    padding: 38px 22.5px 27px;
+    height: 100%;
+}
+
+.itemTitle {
+    color: #040D1D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.itemTitle small {
+    font-size: 24px;
+}
+
+.itemDescription {
+    color: #040D1D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:767.9px) {
+
+    .block {
+        min-height: 730px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 34px;
+    }
+}

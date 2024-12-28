@@ -1,0 +1,127 @@
+.block {
+    padding: 45px 0 65px;
+    --labels-bg-color: #0B1B3B;
+    --labels-text-color: #fff;
+}
+
+.title {
+    color: #040D1D;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+}
+
+.salariesWrapper {
+    gap: 10px;
+}
+
+.labelsWrapper {
+    background-color: var(--labels-bg-color);
+    color: var(--labels-text-color);
+    border-radius: 5px;
+    padding: 22px 0;
+}
+
+.labelsWrapper>div {
+    color: var(--labels-text-color);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.labelsWrapper>div:not(:first-child) {
+    border-left: 1px solid white;
+}
+
+
+.salaryWrapper {
+    background-color: rgba(218, 227, 243, 0.50);
+    border-radius: 5px;
+    padding: 22px 0;
+    position: relative;
+    min-height: 114px;
+}
+
+.salaryWrapper .color {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 12px;
+    border-radius: 5px 0 0 5px;
+    padding: 0;
+}
+
+.salaryWrapper .salaryTitle {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.salaryWrapper .salaryValue {
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.salaryWrapper>div:not(:first-child) {
+    border-left: 1px solid #000;
+}
+
+@media screen and (max-width:991.9px) {
+
+    .block {
+        padding: 50px 0 60px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 26px;
+    }
+
+    .salariesWrapper {
+        gap: 4px;
+    }
+
+    .labelsWrapper>div {
+        font-size: 13.5px;
+        font-weight: 800;
+    }
+
+    .labelsWrapper>div:not(:first-child) {
+        border-left: unset;
+    }
+
+
+    .salaryWrapper {
+        min-height: 90px;
+    }
+
+    .salaryWrapper .salaryTitle {
+        font-size: 14px;
+    }
+
+    .salaryWrapper .salaryValue {
+        font-size: 20px;
+    }
+}

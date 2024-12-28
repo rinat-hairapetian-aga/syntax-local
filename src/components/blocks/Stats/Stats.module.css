@@ -1,0 +1,64 @@
+.block {
+    position: relative;
+    --bg-color: #293F69;
+}
+
+.bottomImage {
+    width: 100%;
+    margin-top: -2px;
+}
+
+.wrapper {
+    background-color: var(--bg-color);
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.statsWraper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+.stat .name {
+    color: #FFF;
+
+    text-align: center;
+    /* Medium */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.stat .value {
+    color: #FFF;
+
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+@media screen and (max-width:767.9px) {
+
+    .statsWraper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 32px;
+    }
+
+    .stat .name {
+        font-size: 14px;
+    }
+
+    .stat .value {
+        font-size: 21px;
+
+    }
+}

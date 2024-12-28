@@ -1,0 +1,174 @@
+:root {
+    --card-bg: #1A3261;
+    --card-hover-bg: #0B1B3B;
+}
+
+.postItem {
+    height: 100%;
+    text-decoration: none;
+    border-radius: 12px;
+    border: 1px solid #242535;
+    background: var(--card-bg);
+    display: block;
+    padding: 16px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.postItem:hover {
+    background: var(--card-hover-bg);
+}
+
+.readingTime {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    border-radius: 6px;
+    background: #F1F5FF;
+    padding: 4px 10px;
+    color: #0B1B3B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    z-index: 2;
+}
+
+.postItem .postImg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 16px;
+    /* aspect-ratio: 360 / 240; */
+    aspect-ratio: 122 / 62;
+    max-height: 380px;
+    width: 100%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    background-color: var(--card-bg);
+}
+
+.info {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.category {
+    border-radius: 6px;
+    background: rgba(75, 107, 251, 0.30);
+    padding: 4px 10px;
+    color: #C9D3FF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+
+.title {
+    color: #FFF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.postAuthor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.postAuthorImg {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+
+.postAuthorName {
+    font-family: 'Plus Jakarta Sans', 'sans-serif';
+    text-decoration: none;
+    color: #97989F !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.date {
+    color: #97989F;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+@media only screen and (max-width: 767.9px) {
+
+    .readingTime {
+        font-size: 10.715px;
+        line-height: 15.307px;
+    }
+
+    .postItem .postImg {
+        margin-bottom: 12px;
+    }
+
+    .postAuthor {
+        gap: 15px;
+    }
+
+    .postAuthorImg {
+        width: 28px;
+        min-width: 28px;
+        height: 28px;
+    }
+
+    .info {
+        padding: 6px;
+    }
+
+    .category {
+        font-size: 10.715px;
+        line-height: 15.307px;
+    }
+
+    .title {
+        font-size: 18.368px;
+        line-height: 21.43px;
+        margin-bottom: 15px;
+    }
+
+    .postAuthorName {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 12.245px;
+        line-height: 18.368px;
+        gap: 9px;
+    }
+
+    .date {
+        font-size: 12.245px;
+        line-height: 18.368px;
+    }
+}
