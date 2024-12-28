@@ -1,48 +1,18 @@
-## Steps to commit to Bitbuket
-1. git add -all
-2. git commit -m '<message>'
-3. git push
+## Steps for deploy with wrangler
+1. run npm clean install command: ```npm ci```
+2. check wrangler version: ```wrangler --version```
+3. make sure that you have latest version of wrangler, update if needed: ```npm install -g wrangler@latest```
+4. build your project: ```gatsby build```
+5. check project build result using: ```gatsby serve```
+   1. also you can check project using wrangler command: ```wrangler pages dev ./public```
+6. login to your cloudflare account through wrangler: ```wrangler login```
+   1. you can check current wrangler login data using current command: ```wrangler whoami```
+7. deploy your project: ```wrangler pages deploy ./public``
+   1. select cloudflare account from list
+   2. select to deploy to existing project (select "create new project" if you don't have one)
 
-If this doesn't work, you might have to do the following
-
-1. git pull
-2. git push
-
-Reference:
-https://support.atlassian.com/bitbucket-cloud/docs/push-code-to-bitbucket/
----
-
-## Install Docker to Linode
-
-1. install docker - https://www.linode.com/docs/guides/installing-and-using-docker-on-ubuntu-and-debian/
-
-## Install Docker Compose
-
-Reference:
-https://www.linode.com/docs/guides/how-to-use-docker-compose/
-
-1. When use "sudo curl -L https://github.com/docker/compose/releases/download/1.25.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose" make sure to place "v" letter before version number
-2. Check `uname -s` and `uname -m` properties. There are case sensitive and must be lowercase.
-   For example system can return `Linux-x86_64`, but in repo is file with `linux-x86_64` suffix.
-   https://github.com/docker/compose/releases/tag/v2.11.1
-
-## Run gatsby project docker
-
-1. cd [gatsby project]
-2. docker-compose up -d --build
-
-## Clean docker system cache
-
-1. docker system prune -a
-
-## Stop gatsby application
-
-1. cd [gatsby project]
-2. docker-compose down --volumes (deletes volumes)
-
-## Build from Wordpress
-
-1. Wordpress has "Activate Bitbucket Pipeline" button.
-Button click starts bitbucket pipeline for some branch (dev branch in this case)
-2. Pipeline sends last commit image to Linode server via "sftp-deploy" pipe
-3. After sending pipeline must run ssh command (docker-compose up -d --build) or .sh file on Linode server side (via ssh-run pipe or other way) for build new docker image on server
+## Steps for development
+1. run npm clean install command on first time: ```npm ci```
+2. start gatsby development: ```gatsby develop```
+3. after finish development run build command: ```gatsby build```
+4. repeat steps 5-7 from wrangler deployment steps
