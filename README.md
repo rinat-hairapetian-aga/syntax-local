@@ -7,7 +7,7 @@
    1. also you can check project using wrangler command: ```wrangler pages dev ./public```
 6. login to your cloudflare account through wrangler: ```wrangler login```
    1. you can check current wrangler login data using current command: ```wrangler whoami```
-7. deploy your project: ```wrangler pages deploy ./public``
+7. deploy your project: ```wrangler pages deploy ./public```
    1. select cloudflare account from list
    2. select to deploy to existing project (select "create new project" if you don't have one)
 
